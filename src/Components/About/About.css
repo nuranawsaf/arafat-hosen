@@ -1,0 +1,57 @@
+.about-area{
+    margin-top: 120px;
+}
+.slide{
+    margin-left: 300px;
+    margin-top: -50px;
+}
+.slide img{
+    width: 1%;
+}
+.head{
+    margin-left: 380px;
+    margin-top: -100px;
+}
+.profile{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+}
+.pro-pic img{
+    width: 100%;
+}
+.blog-area{
+    margin-top: 50px;
+}
+.blog-area2{
+    background-color: rgb(219, 215, 215);
+    margin-top: 150px;
+    padding: 100px;
+}
+.gallery1, .gallery2, .gallery3 , .gallery4{
+    border: 2px solid black;
+    padding: 5px;
+}
+.footer-area{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+.last{
+    margin-top: 1px;
+    background-color: black;
+    color: rgba(54, 56, 72, 1);
+    padding: 20px;
+    text-align: center;
+
+}
+.icon-style{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-right: 5px;
+    color: burlywood;
+}
+.icon-area{
+    margin-top: 120px;
+}

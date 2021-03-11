@@ -1,0 +1,82 @@
+.form-area1{
+    color: whitesmoke;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.form-bg1{
+    
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.form-group1{
+    
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.form-group1 input,
+.form-group1 textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    color: rgb(27, 166, 247);
+    border-radius: 8px;
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    color: black;
+    
+}
+#status.success{
+    background-color: rgb(165, 247, 44);
+    animation: status 4s ease forwards;
+    
+}
+#status.error{
+    background-color: rgb(247, 44, 44);
+    color: white;
+    animation: status 4s ease forwards;
+    
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.logo-area{
+    width: 160px;
+}

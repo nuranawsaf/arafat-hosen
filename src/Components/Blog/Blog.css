@@ -1,0 +1,28 @@
+.blog-area img{
+    width: 90%;
+    margin-left: 50px;
+}
+.comments-area{
+    display: flex;
+    margin: 50px;
+    
+}
+.cmnt{
+    margin-left: 20px;
+}
+.font-size{
+    font-size: 15px;
+}
+.p-arena{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 50px;
+}
+.p-arena1{
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 10px;
+}
