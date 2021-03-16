@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import logo from '../../images/logo.png';
+import Logo from '../../images/Logo-Footer.png';
 import banner from '../../images/top-banner.PNG';
 import slide from '../../images/slide.PNG';
 import profile from '../../images/profile.PNG';
@@ -8,9 +9,8 @@ import gallery1 from '../../images/gallery1.jpeg';
 import gallery2 from '../../images/gallery2.jpeg';
 import gallery3 from '../../images/gallery3.jpeg';
 import gallery4 from '../../images/gallery4.jpeg';
-import {  FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
-import { GrLinkedinOption } from 'react-icons/gr';
+import {  FaFacebookSquare, FaArtstation } from 'react-icons/fa';
+import {  ImBehance2 } from 'react-icons/im';
 
 
 const About = () => {
@@ -40,7 +40,7 @@ const About = () => {
                     <img src={banner} alt=""/>
                 </div>
                 <div className="row">
-                    <h1 class='about-area'>  <b>ABOUT ME</b> </h1>
+                    <h1 class='about-area'>  <b> ABOUT ME</b> </h1>
 
 
                 </div>
@@ -91,23 +91,22 @@ const About = () => {
 
                 <div className="row footer-area">
                     <div className="col-md-4 footer-margin">
-                        <img src={logo} class="logo-area color-logo" alt=""/>
+                        <img src={Logo} class="logo-area color-logo" alt=""/>
                         <div class='icon-area'>
-                            <a class='icon-style' href=""><FaFacebookF /></a>
-                            <a class='icon-style' href=""><AiFillYoutube /></a>
-                            <a class='icon-style' href=""><FaTwitter/></a>
-                            <a class='icon-style' href=""><GrLinkedinOption/></a>
-                            <a class='icon-style' href=""><FaInstagram/></a>
+                                <a target="_blank" class='icon-style' href="https://www.behance.net/arafat_hosen"><ImBehance2 /></a>
+                                <a target="_blank" class='icon-style ' href="https://www.facebook.com/arafathosen2"><FaFacebookSquare/></a>
+                                <a target="_blank" class='icon-style' href="https://www.artstation.com/artistarafat"><FaArtstation/></a>
+                            
                         </div>
                         
                     </div>
                     <div className="col-md-4">
                         <h4>LINKS</h4>
                         <br/>
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Gallery</p>
-                        <p>Shop</p>
+                        <p><a class="footer-link" href="/home">Home</a></p>
+                        <p><a class="footer-link" href="/about">About</a></p>
+                        <p><a class="footer-link" href="/gallery">Gallery</a></p>
+                        <p><a class="footer-link" href="/shop">Shop</a></p>
                     </div>
                     <div className="col-md-4">
                         <h4>GET IN TOUCH WITH US</h4>

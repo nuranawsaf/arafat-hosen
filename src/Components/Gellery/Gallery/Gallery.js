@@ -2,10 +2,10 @@ import React from 'react';
 import './Gallery.css';
 import gallery from '../../../images/gallery-banner.PNG';
 import logo from '../../../images/logo.png';
+import Logo from '../../../images/Logo-Footer.png';
 import Acrylic from '../Acrylic/Acrylic';
-import {  FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
-import { GrLinkedinOption } from 'react-icons/gr';
+import {  FaFacebookSquare, FaArtstation } from 'react-icons/fa';
+import {  ImBehance2 } from 'react-icons/im';
 
 const Gallery = () => {
     return (
@@ -16,7 +16,7 @@ const Gallery = () => {
                     <div className="row">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><b>Arafat Hosen</b></a>
+                        <a class="navbar-brand" href="/home"><img src={logo} class="logo-area" alt=""/></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -56,23 +56,22 @@ const Gallery = () => {
             <section class="container">
                 <div className="row footer-area">
                     <div className="col-md-4 footer-margin">
-                        <img src={logo} class="logo-area color-logo" alt=""/>
+                        <img src={Logo} class="logo-area color-logo" alt=""/>
                         <div class='icon-area'>
-                            <a class='icon-style' href=""><FaFacebookF /></a>
-                            <a class='icon-style' href=""><AiFillYoutube /></a>
-                            <a class='icon-style' href=""><FaTwitter/></a>
-                            <a class='icon-style' href=""><GrLinkedinOption/></a>
-                            <a class='icon-style' href=""><FaInstagram/></a>
+                                <a target="_blank" class='icon-style' href="https://www.behance.net/arafat_hosen"><ImBehance2 /></a>
+                                <a target="_blank" class='icon-style ' href="https://www.facebook.com/arafathosen2"><FaFacebookSquare/></a>
+                                <a target="_blank" class='icon-style' href="https://www.artstation.com/artistarafat"><FaArtstation/></a>
+                            
                         </div>
                         
                     </div>
                     <div className="col-md-4">
                         <h4>LINKS</h4>
                         <br/>
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Gallery</p>
-                        <p>Shop</p>
+                        <p><a class="footer-link" href="/home">Home</a></p>
+                        <p><a class="footer-link" href="/about">About</a></p>
+                        <p><a class="footer-link" href="/gallery">Gallery</a></p>
+                        <p><a class="footer-link" href="/shop">Shop</a></p>
                     </div>
                     <div className="col-md-4">
                         <h4>GET IN TOUCH WITH US</h4>

@@ -1,17 +1,24 @@
+.category-full{
+    justify-content: center;
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+
 .featured-area{
+    justify-content: center;
     margin-top: 100px;
 }
 .image-area{
-        position: relative;
-        height: 230px;
-        border-radius: 10px;
-        box-shadow: 3px 3px 5px lightgray;
-        cursor: pointer;
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 .image-area img{
     width: 100%;
@@ -19,11 +26,28 @@
     border: 2px solid black;
     padding: 10px;
 }
+.image-area1{
+    margin: 10px;
+}
+.image-area1 img{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.image-area2{
+    margin: 10px;
+}
+.image-area2 img{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
 .pic1{
-    margin-left: -60px;
+    margin-left: -40px;
 }
 .pic2{
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .category-area{
     margin-top: 100px;
@@ -51,19 +75,31 @@
         border-radius: 10px;
         cursor: pointer;
         width: 90%;
-        margin: auto;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         
 }
+.gellery-pic{
+    margin-top: 50px;
+}
 .card{
-    width: 180px;
+    margin: 10px;
     height: 50;
 }
 .footer-margin{
     margin-bottom: 40px;
 }
-.color-logo{
+/* .color-logo{
     padding: 5px;
     background-color: rgb(255, 255, 255);
+} */
+.card-title{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+}
+.last-pic{
+    height: 530px;
 }

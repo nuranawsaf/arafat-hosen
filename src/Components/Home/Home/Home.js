@@ -11,9 +11,9 @@ import art3 from '../../../images/art3.jpg';
 import art4 from '../../../images/art4.jpg';
 import last from '../../../images/last.jpg';
 import logo from '../../../images/logo.png';
-import {  FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
-import { GrLinkedinOption } from 'react-icons/gr';
+import Logo from '../../../images/Logo-Footer.png';
+import {  FaFacebookSquare, FaArtstation } from 'react-icons/fa';
+import {  ImBehance2 } from 'react-icons/im';
 
 const Home = () => {
     return (
@@ -40,26 +40,21 @@ const Home = () => {
                         </div>
                     </div>
 
+                    <div className="row category-full">
                     <section class="gellery-pic gel-pic"> 
-                        <div class="card">
-                            <img src={art1} class="card-img-top" alt=""/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                        <div class="image-area1">
+                            <img src={art1} alt=""/>
+                            <h6 class="card-title">Watercolor Paintings</h6>
                         </div>
 
-                        <div class="card">
-                            <img src={art2} class="card-img-top" alt=""/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                        <div class="image-area1">
+                            <img src={art2} alt=""/>
+                            <h6 class="card-title">Acrylic Paintings</h6>
                         </div>
 
-                        <div class="card">
-                            <img src={last} class="card-img-top" alt=""/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                        <div class="image-area1">
+                            <img src={last} class="last-pic" alt=""/>
+                            <h6 class="card-title">Portraits</h6>
                         </div>
 
                         
@@ -67,43 +62,39 @@ const Home = () => {
                     </section>
 
                     <section class="gellery-pic gel-pic"> 
-                        <div class="card">
-                            <img src={art3} class="card-img-top" alt=""/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                        <div class="image-area2">
+                            <img src={art3} alt=""/>
+                            <h6 class="card-title">Sketches</h6>
                         </div>
 
-                        <div class="card">
-                            <img src={art4} class="card-img-top" alt=""/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                        <div class="image-area2">
+                            <img src={art4} alt=""/>
+                            <h6 class="card-title">Digital Atrs</h6>
                         </div>
 
                         
 
                     </section>
+                    </div>
 
                     <div>
                         <div className="row footer-area">
                             <div className="col-md-4 footer-margin">
-                                <img src={logo} class="logo-area color-logo" alt=""/>
+                                <img src={Logo} class="logo-area color-logo" alt=""/>
                                 <div class='icon-area'>
-                                        <a class='icon-style' href=""><FaFacebookF /></a>
-                                        <a class='icon-style' href=""><AiFillYoutube /></a>
-                                        <a class='icon-style' href=""><FaTwitter/></a>
-                                        <a class='icon-style' href=""><GrLinkedinOption/></a>
-                                        <a class='icon-style' href=""><FaInstagram/></a>
+                                <a target="_blank" class='icon-style' href="https://www.behance.net/arafat_hosen"><ImBehance2 /></a>
+                                <a target="_blank" class='icon-style ' href="https://www.facebook.com/arafathosen2"><FaFacebookSquare/></a>
+                                <a target="_blank" class='icon-style' href="https://www.artstation.com/artistarafat"><FaArtstation/></a>
+                                        
                                     </div>
                             </div>
                             <div className="col-md-4 footer-margin">
                                     <h4>LINK</h4>
                                     <br/>
-                                    <p>Home</p>
-                                    <p>About</p>
-                                    <p>Gallery</p>
-                                    <p>Shop</p>
+                                    <p><a class="footer-link" href="/home">Home</a></p>
+                                    <p><a class="footer-link" href="/about">About</a></p>
+                                    <p><a class="footer-link" href="/gallery">Gallery</a></p>
+                                    <p><a class="footer-link" href="/shop">Shop</a></p>
                                 </div>
                                 <div className="col-md-4">
                                     <h4>GET IN TOUCH WITH US</h4>

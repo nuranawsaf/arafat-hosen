@@ -23,12 +23,20 @@
     margin-top: 50px;
 }
 .blog-area2{
+    text-align: justify;
     background-color: rgb(219, 215, 215);
     margin-top: 150px;
     padding: 100px;
 }
+.gallery2{
+    height: 220px;
+}
+.gallery3{
+    height: 220px;
+}
+
 .gallery1, .gallery2, .gallery3 , .gallery4{
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 5px;
 }
 .footer-area{
@@ -46,12 +54,18 @@
 
 }
 .icon-style{
-    border: 1px solid white;
-    border-radius: 3px;
+    font-size: 22px;
     padding: 8px 10px;
     margin-right: 5px;
-    color: burlywood;
+    color: rgb(255, 255, 255);
 }
 .icon-area{
     margin-top: 120px;
+    text-decoration: none;
+}
+.icon-style:hover{
+    color: rgb(71, 187, 255);
+}
+.p-area{
+    text-align: justify;
 }

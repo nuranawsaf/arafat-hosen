@@ -1,7 +1,8 @@
 .header-area{
-    background-image: url('../../../images/header.PNG');
+    background: url('../../../images/header.PNG');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     height: 700px;
 }
 .about-btn{
@@ -12,7 +13,7 @@
     color: black;
 }
 .header{
-    color: blanchedalmond;
+    color: whitesmoke;
     margin-top: 350px;
     margin-left: 100px;
 }

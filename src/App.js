@@ -11,6 +11,7 @@ import About from './Components/About/About';
 import Gallery from './Components/Gellery/Gallery/Gallery';
 import Contact from './Components/Contact/Contact';
 import Blog from './Components/Blog/Blog';
+import Shop from './Components/Shop/Shop';
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
 
           <Route path='/blog'>
             <Blog></Blog>
+          </Route>
+
+          <Route path='/shop'>
+            <Shop></Shop>
           </Route>
 
         </Switch>
