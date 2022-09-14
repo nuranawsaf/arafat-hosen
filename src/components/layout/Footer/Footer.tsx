@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container text-white grid md:grid-cols-3 lg:grid-cols-3  gap-x-12 ">
                 <div className='foot1   grid justify-center'>
                     <img className='w-[90%]' src="/assests/images/white-logo.png" alt="" />
-                    <div className='grid grid-cols-4 mt-40 '>
+                    <div className='grid grid-cols-4 mt-40 gf'>
                         <Link href="https://www.linkedin.com/in/arafat-hosen-32851b1b9/">
                             <img src="/assests/icons/behance.png" alt="" />
                         </Link>
