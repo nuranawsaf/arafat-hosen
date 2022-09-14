@@ -1,0 +1,297 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+html {
+  font-size: 40%;
+}
+body {
+  font-size: 1.6rem;
+  color: #07031f;
+  font-family: 'Poppins';
+}
+
+/* @layer base {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+} */
+
+h1 {
+  @apply text-[8rem] font-poppins leading-tight;
+}
+h2 {
+  @apply text-[6rem] font-poppins font-bold leading-tight;
+}
+h3 {
+  @apply text-[3.6rem] font-poppins font-medium leading-tight;
+}
+h4 {
+  @apply text-[3rem] font-poppins font-medium leading-tight;
+}
+h5 {
+  @apply text-[36px] font-poppins font-semibold leading-tight;
+}
+p {
+  @apply text-[16px] md:text-[2.4rem] text-black/80 font-poppins leading-[3.6rem];
+}
+.p_small {
+  @apply text-[1.8rem] font-poppins leading-[3.0rem];
+}
+a {
+  @apply hover:text-red-600 font-semibold transition duration-300 ease-in-out lg:text-[1.5rem] text-[16px] font-poppins ;
+}
+button {
+  @apply lg:text-[2.4rem] text-[07px] font-poppins font-semibold leading-tight px-[3.5rem] lg:px-[5rem] py-[1.4rem] lg:py-[2.4rem] text-white active:scale-95 transition-all transform bg-white rounded-[0.8rem];
+}
+.bg-style {
+  @apply bg-cover bg-no-repeat bg-center;
+}
+.sb {
+  border: 1px solid red;
+}
+
+.gallery-border{
+  @apply border border-gray-200 p-5;
+}
+
+.container {
+  @apply mx-auto max-w-[80%];
+}
+@media (min-width: 360px) {
+  .container {
+    @apply max-w-[80%];
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    @apply max-w-[70rem];
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+  .container {
+    @apply max-w-[90rem];
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-[104rem];
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    @apply max-w-[124rem];
+  }
+}
+@import "tailwindcss/utilities";
+
+.banner-bg{
+  background-image: url('https://res.cloudinary.com/ddtyi1hm8/image/upload/v1661674155/images/untitled-1-1-min_optimized_bc4w8o.png');
+}
+
+.about-bg{
+  background-image: url('https://res.cloudinary.com/ddtyi1hm8/image/upload/v1661674143/images/Rectangle_27-min_f2g5da.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outdoor-bg{
+  background-image: url('https://res.cloudinary.com/ddtyi1hm8/image/upload/v1661709084/images/_DSC2082_1-min_kui05o.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-bg{
+  background-image: url('https://res.cloudinary.com/ddtyi1hm8/image/upload/v1661674154/images/mask-group-min_optimized_pduyhr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-sb{
+  border: 1px solid rgb(207, 205, 205);
+  padding: 10px;
+}
+
+.work-head img{
+  position: relative;
+}
+
+.outdoor-btn{
+  color: #07031f;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 16px 38px;
+  font-weight: 500;
+}
+
+.foot1,.foot2,.foot3{
+  padding: 22px 0px;
+}
+
+.foot2 a{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+
+.form-area1{
+    color: whitesmoke;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.form-bg1{
+    
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #161616;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.form-group1{
+    
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.form-group1 input,
+.form-group1 textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.sub-btn[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgba(230, 226, 226, 0.199);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    color: black;
+    
+}
+#status.success{
+    background-color: rgb(165, 247, 44);
+    animation: status 4s ease forwards;
+    
+}
+#status.error{
+    background-color: rgb(247, 44, 44);
+    color: white;
+    animation: status 4s ease forwards;
+    
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.logo-area{
+    width: 160px;
+}
+
+.gallery-hover{
+    @apply absolute top-0 left-0 z-10 hidden group-hover:block group-hover:bg-black/50 w-full h-full
+    group-hover:text-white ;
+}
+.filter-hover{
+  @apply hover:font-bold hover:text-3xl
+}
+
+.footer-bg{
+  background-color: black;
+}
+.footer-bg2{
+  background-color: rgb(29, 28, 28);
+}
+
+.bg-about{
+  background-color: #F8F8F8;
+}
+
+.model{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: .4s ease, visibilty .4s ease, transform .5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.model.open{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+
+}
+
+.svg img{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 4rem;
+  height: 4rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0 , 0.4 );
+  color: aliceblue;
+  cursor: pointer;
+}
