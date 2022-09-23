@@ -1,17 +1,13 @@
 import React from 'react'
 
-const outData = [
-    {
-        "url" : ""
-    }
-]
+
 
 const Outdoor = () => {
   return (
-    <section className='container mt-60 lg:mt-40'>
+    <section className='mx-[2rem] md:container mt-60 lg:mt-40'>
         <div>
-            <div className='grid grid-cols-2 work-head items-end  mb-[-15px]  '>
-              <h1 className='text-5xl lg:text-6xl font-semibold  '>Outdoor Paintings</h1>
+            <div className='grid md:grid-cols-2 work-head items-end  mb-[-15px]  '>
+              <h1 className='text-[24px] lg:text-6xl font-semibold  '>Outdoor Paintings</h1>
               
             </div>
             <p className='text-[14px] my-12 text-justify leading-relaxed '>I love to do the outdoor painting for many reasons. One of the most common reasons is doing outdoor activities and being connected with nature, along with the fact that when painting outdoors. It helps me
@@ -26,7 +22,7 @@ const Outdoor = () => {
         </div>
         <div className='flex justify-center mt-20 mb-32'>
             {/* <button  className='out-btn text-4xl' >View More</button> */}
-            <a href="/outdoor" className='outdoor-btn text-2xl'>View More</a>
+            <a href="/outdoor" className='outdoor-btn text-[14px] md:text-2xl'>View More</a>
         </div>
 
     </section>

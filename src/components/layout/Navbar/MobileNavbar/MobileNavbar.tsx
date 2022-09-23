@@ -9,7 +9,7 @@ const MobileNavbar: React.FC = () => {
 
   return (
     <nav className='block lg:hidden  py-4 relative'>
-      <div className='container  flex items-center justify-between'>
+      <div className='px-[2rem]  flex items-center justify-between'>
         <div>
           <Link href='/'>
             <img className='w-[80%]' src='/assests/images/main-logo.png' alt='Brand Logo' />

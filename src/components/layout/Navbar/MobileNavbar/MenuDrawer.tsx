@@ -17,7 +17,7 @@ const MenuDrawer: React.FC = () => {
           : 'w-0 opacity-0 translate-x-full'
       )}
     >
-      <div className='container my-4 '>
+      <div className='px-[2rem] my-4 '>
         <button
           className='block ml-auto bg-transparent p-0 shadow-none text-[3rem]'
           onClick={() => dispatch(expandMenuReducer())}
@@ -30,15 +30,13 @@ const MenuDrawer: React.FC = () => {
             <img src='/assests/images/white-logo.png' alt='Brand Logo' />
           </Link>
 
-          <div className=' mt-8 flex flex-col gap-y-[28px] '>
+          <div className=' flex flex-col gap-y-[28px] mt-[44px]'>
             {data.map((item, index) => {
-              return item.type === 'link' ? (
+              return(
                 <Link key={index} href={item.href}>
                   {item.title}
                 </Link>
-              ) : (
-                <button className='w-max'>{item.title}</button>
-              );
+              )
             })}
           </div>
         </div>

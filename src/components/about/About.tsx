@@ -4,18 +4,18 @@ import React from 'react'
 const About = () => {
   return (
     <section>
-        <div  className='about-bg h-[308px] md:h-[449px] lg:h-[826px]'>
+        <div  className='about-bg h-[188px] md:h-[449px] lg:h-[826px]'>
             <h1></h1>
         </div>
 
-        <div className='container mt-28 '>
+        <div className='mx-[2rem] md:container mt-14 md:mt-28 '>
 
             <div >
-                <img className='w-[38%]' src="/assests/images/Group60-min.png" alt="" />
+                <img className='w-[68%] md:w-[38%]' src="/assests/images/Group60-min.png" alt="" />
             </div>
         </div>
 
-        <div className='container mt-32 grid lg:grid-cols-2 gap-x-20'>
+        <div className='mx-[2rem] md:container mt-32 grid lg:grid-cols-2 gap-x-20'>
             <div>
                 <img src="/assests/images/profile-min.jpg" alt="" />
             </div>

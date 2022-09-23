@@ -27,26 +27,26 @@ const cateData = [
 const Category = () => {
     console.log(cateData);
   return (
-    <section className=' mt-[100px]'>
+    <section className='mt-[6rem] md:mt-[100px]'>
 
-        <div className="container">
+        <div className="md:container mx-[2rem]">
             <div className='category grid justify-end '>
 
-                <div className='grid grid-cols-2 items-end'>
+                <div className='grid md:grid-cols-2 items-end'>
                     <div className='flex items-end col-span-2'>
-                        <h1 className='text-5xl lg:text-6xl font-semibold mb-[-20px]'>My Category</h1>
+                        <h1 className='text-[24px] lg:text-6xl font-semibold mb-[-20px]'>My Category</h1>
                     
                     </div>
                 </div>
             </div>
 
             <div>
-                <p className='text-right text-[15px] my-12 '>Discover The World Through Original Paintings For Sale.</p>
+                <p className='md:text-right text-justify text-[15px] my-12 '>Discover The World Through Original Paintings For Sale.</p>
             </div>
         </div>
 
-        <div className='bg-gray-200 p-56'>
-            <div className='container grid md:grid-cols-2 lg:grid-cols-2  gap-x-24 gap-y-32'>
+        <div className='bg-gray-200 py-24 pb-36  md:p-56'>
+            <div className='px-[2rem] md:container grid md:grid-cols-2 lg:grid-cols-2  md:gap-x-24 gap-y-32'>
             
             {cateData.map((i) => {
                 const {id, url, info} = i;

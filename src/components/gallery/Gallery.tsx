@@ -72,34 +72,34 @@ function Gallery() {
         </div>
 
 
-    <div className='gallery-bg h-[279px] md:h-[409px] lg:h-[819px]'>
+    <div className='gallery-bg h-[209px] md:h-[409px] lg:h-[819px]'>
       <h1></h1>
     </div>
 
-    <div className="container my-3 mt-20 " >
-      <div className="row grid grid-cols-3 lg:grid-cols-6 ">
+    <div className="mx-[2rem]  md:container my-3 mt-20 " >
+      <div className=" grid grid-cols-3 lg:grid-cols-6 ">
         <div className="">
-        <button className='text-gray-700  text-[17px]  font-medium filter-hover' onClick={allItem}>All</button>
+        <button className='text-gray-700  md:text-[17px] footer-button  font-medium filter-hover md:text-center' onClick={allItem}>All</button>
         </div>
 
          <div className="">
-        <button className='text-gray-700 text-[17px] font-medium filter-hover' onClick={()=>onlyAcrylic('Acrylic Paintings')}>Acrylic</button>
+        <button className='text-gray-700 md:text-[17px] footer-button font-medium filter-hover' onClick={()=>onlyAcrylic('Acrylic Paintings')}>Acrylic</button>
         </div>
         
-        <div className="c">
-        <button className='text-gray-700 text-[17px] font-medium filter-hover' onClick={()=>onlyWatercolor('Watercolor')}>Watercolor</button>
+        <div className="">
+        <button className='text-gray-700 md:text-[17px] footer-button font-medium filter-hover' onClick={()=>onlyWatercolor('Watercolor')}>Watercolor</button>
         </div>
 
         <div className="c">
-        <button className='text-gray-700 text-[17px] font-medium filter-hover' onClick={()=>onlySketches('Sketches')}>Sketches</button>
+        <button className='text-gray-700 md:text-[17px] footer-button font-medium filter-hover' onClick={()=>onlySketches('Sketches')}>Sketches</button>
+        </div>
+
+        <div className="">
+        <button className='text-gray-700 md:text-[17px] footer-button font-medium filter-hover' onClick={()=>onlyPortraits('Portraits')}>Portraits</button>
         </div>
 
         <div className="c">
-        <button className='text-gray-700 text-[17px] font-medium filter-hover' onClick={()=>onlyPortraits('Portraits')}>Portraits</button>
-        </div>
-
-        <div className="c">
-        <button className='text-gray-700 text-[17px] font-medium filter-hover' onClick={()=>onlyDigital('Digital Arts')}>Digital Arts</button>
+        <button className='text-gray-700 md:text-[17px] footer-button font-medium filter-hover' onClick={()=>onlyDigital('Digital Arts')}>Digital Arts</button>
         </div>
 
       </div>
@@ -107,8 +107,8 @@ function Gallery() {
 
 
 
-    <div className="container">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16 mb-80">
+    <div className="mx-[2rem] md:container">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-2 md:gap-x-16 gap-y-2 md:gap-y-16 mb-80">
         {
           urls.map((value,index)=>{
             return (
